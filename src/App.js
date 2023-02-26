@@ -10,7 +10,6 @@ function App() {
         <p>
           Edite <code>src/App.js</code> e salve para recarregar a página.
         </p>
-
         <p>Mais um paragrafo.</p>
         <a
           className="App-link"
