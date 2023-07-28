@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+    .div-title h1 {
+        font-size: 35px;
+    }   
+
+    .div-title p {
+        font-size: 14px;
+    }   
+}

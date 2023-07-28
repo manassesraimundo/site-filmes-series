@@ -1,26 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./page/Home";
+import Shearch from "./page/Shearch";
+import Movies from './page/Movies';
+import Series from './page/Series';
+import Sobre from "./page/Sobre";
+import DetalheFlime from "./Components/Detalhe/detalheFilme"
+import DetalheSerie from "./Components/Detalhe/detalheSerie"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Seja bem-vindo ao React!</h1>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edite <code>src/App.js</code> e salve para recarregar a página.
-        </p>
-        <p>Mais um paragrafo.</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+const App = () => {
+  return(
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path='/' Component={Home} />
+          <Route path="/shearch" Component={Shearch} />
+          <Route path="/movies" Component={Movies} />
+          <Route path="/series" Component={Series} />
+          <Route path="/sobre" Component={Sobre} />
+          <Route path="/detalheFilme" Component={DetalheFlime} />
+          <Route path="/detalheSerie" Component={DetalheSerie} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
