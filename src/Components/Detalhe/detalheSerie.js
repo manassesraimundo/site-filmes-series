@@ -57,9 +57,6 @@ const DetalheSerie = () => {
                 <div className="title-sebre">
                     <Title title='Detalhes da Série' />
                 </div>
-                <div className="title-sebre">
-                    <Title title='Detalhes da Série' />
-                </div>
                 </header> 
             </div>
 
