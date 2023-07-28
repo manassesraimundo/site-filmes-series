@@ -55,7 +55,7 @@ const DetalheSerie = () => {
                 </nav>
 
                 <div className="title-sebre">
-                    <Title title='Detalhes do Série' />
+                    <Title title='Detalhes da Série' />
                 </div>
                 </header> 
             </div>
