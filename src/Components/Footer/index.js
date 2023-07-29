@@ -26,7 +26,7 @@ const Footer = () => {
                     <p>Ao utilizar nosso site, você concorda com os termos e condições de uso. Leia os nossos termos para garantir uma experiência segura e satisfatória.</p>
                 </div>
            </div>
-           <p style={{textAlign: "center"}}> &copy; Filmes & Séries | Todos os direitos reservados. Site desenvolvido pro <a href='https://github.com/manassesraimundo' target="_blank">Manassés Raimundo</a></p>
+           <p style={{textAlign: "center"}}> &copy; Filmes & Séries | Todos os direitos reservados. Site desenvolvido por <a href='https://github.com/manassesraimundo' target="_blank">Manassés Raimundo</a></p>
         </footer>
     );
 }
