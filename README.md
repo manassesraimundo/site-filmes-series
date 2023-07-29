@@ -1,3 +1,3 @@
-# Getting Started with Create React App
+# Filmes & Séries
 
-Open [https://filmes-series-liadr.vercel.app](https://filmes-series-liard.vercel.app/) to view it in your browser.
+Ver o site -> [https://filmes-series-liadr.vercel.app](https://filmes-series-liard.vercel.app/) .
