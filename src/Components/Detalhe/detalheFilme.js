@@ -60,10 +60,10 @@ const DetalheFlime = () => {
             </div>
 
             <section className="section-detalhe">
-                <picture>
+                <picture data-aos="fade-right" data-aos-duration="3000">
                     <img src={urlFixa + movie.poster_path} alt="imagem do filme"  width='500px'/>
                 </picture>
-                <div className="conteudo">
+                <div className="conteudo"  data-aos="fade-left" data-aos-duration="3000">
                     <h2>{movie.title}</h2>
                     <p>{movie.overview}</p>
                     <h3>Slogan: {movie.tagline}</h3>
