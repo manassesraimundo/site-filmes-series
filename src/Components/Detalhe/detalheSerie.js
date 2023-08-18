@@ -72,9 +72,9 @@ const DetalheSerie = () => {
                         <p>Lingua: {serie.original_language}</p>
                         <p> <img src={start} width='20px'/>: {(serie.vote_average)}</p>
                         <p>Ano de lançamento em: {serie.last_air_date}</p>
-                        <p>Temporadas: {serie.number_of_seasons}</p>
+                        {/* <p>Temporadas: {serie.number_of_seasons}</p>
                         <p>Epísodios: {serie.number_of_episodes}</p>
-                        <p>Duração de: {serie.episode_run_time}s</p>
+                        <p>Duração de: {serie.episode_run_time}s</p> */}
                         <p>Gêneros: {genero.map((item) => <span key={item.id}>{item.name} </span>)}</p>
                         <a href={serie.homepage} target="_blank">Ver site</a>
                     </div>

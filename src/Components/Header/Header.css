@@ -224,10 +224,8 @@
     }
 
     .checkbox:checked ~ .contaneir-menu {
-        /* width: calc(100vw - 4.6875rem);
-        height: calc(100vh - 4.6875rem); */
+        height: calc(100vh + 4.6875rem);
         width: 100vw;
-        height: 100vh;
         visibility: visible;
         overflow-y: auto;       
     }
