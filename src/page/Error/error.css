@@ -5,3 +5,14 @@
     justify-content: center;
     margin-top: 38px;
 }
+
+.container-error h2 {
+    margin-bottom: 24px;
+    font-size: 26px;
+}
+
+.container-error div a {
+    background-color: #fcfcfc;
+    color: #000;
+    font-size: 18px;
+}
