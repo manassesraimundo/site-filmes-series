@@ -6,6 +6,12 @@
 
 .main-conteudo {
     margin-top: 20px;
+    background-color: #fff;
+    color: #000;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main-conteudo p {
