@@ -3,11 +3,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 38px;
+  
 }
 
 .container-error h2 {
-    margin-bottom: 24px;
+    margin-bottom: 38px;
     font-size: 38px;
 }
 
