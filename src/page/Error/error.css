@@ -8,13 +8,13 @@
 
 .container-error h2 {
     margin-bottom: 24px;
-    font-size: 26px;
+    font-size: 38px;
 }
 
 .container-error div a {
     background-color: #fcfcfc;
     color: #000;
-    font-size: 18px;
+    font-size: 16px;
     padding: 10px;
     border-radius: 6px;
 }
