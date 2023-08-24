@@ -4,6 +4,9 @@ import api, { key } from '../../services/api';
 import { randoBanner } from '../../Random/random';
 import { useNavigate, Link } from "react-router-dom";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const Header = ({ title, paragrafo}) => {
 
     // const urlFixa = 'https://image.tmdb.org/t/p/original'; // URL fixa de imagem
@@ -33,6 +36,10 @@ const Header = ({ title, paragrafo}) => {
         imgFundo();
     }, [])
 
+    useEffect(() => {
+        AOS.init(); // Inicialize a biblioteca AOS
+      }, []);
+
     const handleSubmit = (evt) =>{
         evt.preventDefault()
         if(!input) return
@@ -58,7 +65,7 @@ const Header = ({ title, paragrafo}) => {
                     </ul>
                 </nav>
 
-                <div className="div-title">
+                <div className="div-title" data-aos="flip-down" data-aos-delay="400">
                     <h1>{title}</h1>
                     <p>{paragrafo}</p>
                 </div>
