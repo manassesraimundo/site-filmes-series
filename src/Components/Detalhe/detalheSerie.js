@@ -71,7 +71,7 @@ const DetalheSerie = () => {
                 <picture>
                     <img src={urlFixa + serie.poster_path} alt="imagem do filme"  width='500px'/>
                 </picture>
-                <div className="conteudo" data-aos="fade-left" data-aos-delay="500">
+                <div className="conteudo" data-aos="fade-left" data-aos-delay="600">
                     <h2>{serie.name}</h2>
                     <p>{serie.overview}</p>
                     <h3>Slogan: {serie.tagline}</h3>

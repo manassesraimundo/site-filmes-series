@@ -70,7 +70,7 @@ const DetalheFlime = () => {
                 <picture>
                     <img src={urlFixa + movie.poster_path} alt="imagem do filme"  width='500px'/>
                 </picture>
-                <div className="conteudo" data-aos="fade-left" data-aos-delay="500">
+                <div className="conteudo" data-aos="fade-left" data-aos-delay="600">
                     <h2>{movie.title}</h2>
                     <p>{movie.overview}</p>
                     <h3>Slogan: {movie.tagline}</h3>
