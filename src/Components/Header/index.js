@@ -70,7 +70,7 @@ const Header = ({ title, paragrafo}) => {
                     <p>{paragrafo}</p>
                 </div>
                 
-                <div className="div-input">
+                <div className="div-input" data-aos="flip-down" data-aos-delay="400">
                     <form onSubmit={handleSubmit}>
                         <input type="text" placeholder="Filme ou série" value={input} onChange={(evt) => setInput(evt.target.value)} />
                         <button type="submit">Pesquisar</button>

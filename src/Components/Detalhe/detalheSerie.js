@@ -6,6 +6,9 @@ import Title from "../Title/inde";
 import start from '../../img/estrela.png';
 import Footer from '../../Components/Footer';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const DetalheSerie = () => {
 
     const [serie, setSerie] = useState([]);
@@ -34,6 +37,10 @@ const DetalheSerie = () => {
         fetchMovie();
         
     }, [query]);
+
+    useEffect(() => {
+        AOS.init(); // Inicialize a biblioteca AOS
+      }, []);
   
     return(
         <>
@@ -60,11 +67,11 @@ const DetalheSerie = () => {
                 </header> 
             </div>
 
-            <section className="section-detalhe">
+            <section className="section-detalhe" data-aos="fade-right" data-aos-delay="500">
                 <picture>
                     <img src={urlFixa + serie.poster_path} alt="imagem do filme"  width='500px'/>
                 </picture>
-                <div className="conteudo">
+                <div className="conteudo" data-aos="fade-left" data-aos-delay="500">
                     <h2>{serie.name}</h2>
                     <p>{serie.overview}</p>
                     <h3>Slogan: {serie.tagline}</h3>

@@ -7,6 +7,9 @@ import Title from "../Title/inde";
 import start from '../../img/estrela.png';
 import Footer from '../../Components/Footer';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const DetalheFlime = () => {
     
     const urlFixa = 'https://image.tmdb.org/t/p/original/';
@@ -33,6 +36,10 @@ const DetalheFlime = () => {
         // console.log(query)
         fetchMovie();
     }, [query]);
+
+    useEffect(() => {
+        AOS.init(); // Inicialize a biblioteca AOS
+      }, []);
   
     return(
         <>
@@ -59,11 +66,11 @@ const DetalheFlime = () => {
                 </header> 
             </div>
 
-            <section className="section-detalhe">
+            <section className="section-detalhe" data-aos="fade-right" data-aos-delay="500">
                 <picture>
                     <img src={urlFixa + movie.poster_path} alt="imagem do filme"  width='500px'/>
                 </picture>
-                <div className="conteudo">
+                <div className="conteudo" data-aos="fade-left" data-aos-delay="500">
                     <h2>{movie.title}</h2>
                     <p>{movie.overview}</p>
                     <h3>Slogan: {movie.tagline}</h3>
